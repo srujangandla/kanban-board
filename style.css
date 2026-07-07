@@ -1,0 +1,167 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#18d9d9;
+padding:30px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+h1{
+text-align:center;
+margin-bottom:30px;
+color:#1f2937;
+}
+
+.add-task{
+display:flex;
+justify-content:center;
+gap:12px;
+margin-bottom:30px;
+}
+
+#taskInput{
+width:320px;
+padding:12px;
+font-size:16px;
+border:2px solid #8b5cf6;
+border-radius:8px;
+outline:none;
+background:#f8f5ff;
+color:#333;
+transition:.3s;
+}
+
+#taskInput:focus{
+border-color:#ec4899;
+box-shadow:0 0 8px rgba(236,72,153,.3);
+}
+
+#addBtn{
+padding:12px 22px;
+border:none;
+border-radius:8px;
+background:linear-gradient(135deg,#8b5cf6,#ec4899);
+color:#fff;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+#addBtn:hover{
+transform:translateY(-2px);
+box-shadow:0 6px 12px rgba(0,0,0,.2);
+}
+
+.board{
+display:flex;
+gap:20px;
+justify-content:space-between;
+}
+
+.column{
+flex:1;
+background:#ffffff;
+padding:15px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+min-height:500px;
+}
+
+.column:nth-child(1){
+background:#fff4f6;
+}
+
+.column:nth-child(2){
+background:#fff8e6;
+}
+
+.column:nth-child(3){
+background:#eefcf3;
+}
+
+.column h2{
+text-align:center;
+margin-bottom:15px;
+padding:10px;
+border-radius:8px;
+color:#fff;
+}
+
+.column:nth-child(1) h2{
+background:#ff4d8d;
+}
+
+.column:nth-child(2) h2{
+background:#f59f00;
+}
+
+.column:nth-child(3) h2{
+background:#2dce89;
+}
+
+.cards{
+min-height:400px;
+padding:5px;
+border-radius:8px;
+transition:.3s;
+}
+
+.card{
+padding:12px;
+margin-bottom:12px;
+border-radius:10px;
+cursor:grab;
+word-wrap:break-word;
+color:#333;
+font-weight:600;
+box-shadow:0 3px 8px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-3px);
+}
+
+.card:active{
+cursor:grabbing;
+}
+
+.card:nth-child(5n+1){
+background:#ffd6e7;
+border-left:6px solid #ff4d8d;
+}
+
+.card:nth-child(5n+2){
+background:#d8f3dc;
+border-left:6px solid #2dce89;
+}
+
+.card:nth-child(5n+3){
+background:#fff3bf;
+border-left:6px solid #f59f00;
+}
+
+.card:nth-child(5n+4){
+background:#dbeafe;
+border-left:6px solid #3b82f6;
+}
+
+.card:nth-child(5n){
+background:#ede9fe;
+border-left:6px solid #7c3aed;
+}
+
+.cards.drag-over{
+background:#d6f4ff;
+border:2px dashed #3b82f6;
+}
