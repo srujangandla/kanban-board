@@ -6,7 +6,8 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#18d9d9;
+background:linear-gradient(135deg,#667eea 0%,#764ba2 50%,#f093fb 100%);
+min-height:100vh;
 padding:30px;
 }
 
@@ -18,7 +19,7 @@ margin:auto;
 h1{
 text-align:center;
 margin-bottom:30px;
-color:#1f2937;
+color:#11161d;
 }
 
 .add-task{
